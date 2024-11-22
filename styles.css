@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f2f4f7;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  color: #333;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#book-list {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#book-list .book-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#book-list .book-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.book-image {
+  width: 50px;
+  height: 75px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 4px;
+}
+
+.book-info {
+  flex-grow: 1;
+}
+
+#book-list a {
+  text-decoration: none;
+  color: #0073e6;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+#book-list a:hover {
+  text-decoration: underline;
+  color: #005bb5;
+}
+
+.book-author {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 5px;
+}
+
+.book-detail-container {
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.book-detail-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-detail-image {
+  width: 150px;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.book-detail-info {
+  text-align: center;
+  margin-top: 15px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  display: block;
+  width: 220px;
+  margin: 20px auto;
+  padding: 12px;
+  font-size: 1.1em;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  background-color: #218838;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(72, 180, 97, 0.5);
+}
